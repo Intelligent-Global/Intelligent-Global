@@ -1,0 +1,116 @@
+<!-- app.component.html -->
+<div>
+    <div *ngIf="!isLoginPage">
+        <div>
+            <!-- Navigation-->
+            <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+                <div class="container">
+                    <a class="navbar-brand" href=""><img [src]="images.image001" alt="..." /></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        Menu
+                        <i class="fas fa-bars ms-1"></i>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarResponsive">
+                        <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+                            <li class="nav-item" *ngFor="let array of arrays.array001"><a class="nav-link"
+                                    [href]="array.link">{{ array.name }}</a></li>
+                            <li *ngIf="showAdminButton()" class="nav-item" (click)="logout()"><a
+                                    class="nav-link">ออกจากระบบ</a></li>
+<!-- 
+                            <li class="nav-item" *ngFor="let array of arrays.array001">
+                                <button mat-button [matMenuTriggerFor]="menuServices" class="nav-link">{{ array.name
+                                    }}</button>
+                                <mat-menu #menuServices="matMenu">
+                                    <button mat-menu-item>Option 1</button>
+                                    <button mat-menu-item>Option 2</button>
+                                    <button mat-menu-item>Option 3</button>
+                                </mat-menu>
+                            </li>
+                            <li *ngIf="showAdminButton()" class="nav-item" (click)="logout()"><a
+                                    class="nav-link">ออกจากระบบ</a></li> -->
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <router-outlet></router-outlet>
+        <br><br>
+        <!-- Footer-->
+        <div class="custom-001" style="background-color: #ffc800 !important;">
+            <div class="col-12 col-md-6 col-lg-3 app-custom-css-002">
+                <h3 class="section-subheading text-muted" style="color: #003CA6 !important;">{{ contents.content006 }}
+                </h3>
+                <div [innerHTML]="contents.content010"></div>
+                <div [innerHTML]="contents.content011"></div>
+                <div [innerHTML]="contents.content012"></div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 app-custom-css-002">
+                <h3 class="section-subheading text-muted" style="color: #003CA6 !important;">{{ contents.content007 }}
+                </h3>
+                <div [innerHTML]="contents.content013"></div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 app-custom-css-002">
+                <h3 class="section-subheading text-muted" style="color: #003CA6 !important;">{{ contents.content008 }}
+                </h3>
+                <div *ngFor="let array of arrays.array002">
+       
+                        <div class="app-custom-css-001" [innerHTML]="array.name" (click)="goToDetail(array)"></div>
+                  
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 app-custom-css-002">
+                <h3 class="section-subheading text-muted" style="color: #003CA6 !important;">{{ contents.content009 }}
+                </h3>
+                <!-- <div *ngFor="let array of arrays.array003">
+                    <div [innerHTML]="array.name"></div>
+                </div>
+                <br> -->
+                <img style="width: 50%;" [src]="images.image002" (click)="addLINE()" />
+                <br>
+                <img style="width: 50%; margin: 5% 0%; border-radius: 8px;" [src]="images.image003"
+                    (click)="addLINE()" />
+            </div>
+        </div>
+        <footer class="footer py-4" style="background-color: #003CA6;">
+            <div class="container">
+                <div [innerHTML]="contents.content014"></div>
+            </div>
+        </footer>
+        <app-scroll-to-top></app-scroll-to-top>
+    </div>
+
+    <div *ngIf="isLoginPage">
+        <div class="login">
+
+            <div style="height: 100%; display: contents;">
+                <div class="col-12">
+                    <img [src]="images.image001" class="header-logo app-custom-css-003" alt="Intellegent Global">
+                    <br><br>
+                    <mat-form-field appearance="outline" class="app-custom-css-004">
+                        <mat-label>Username</mat-label>
+                        <input matInput [(ngModel)]="username">
+                    </mat-form-field>
+                    <br>
+                    <mat-form-field appearance="outline" class="app-custom-css-004">
+                        <mat-label>Password</mat-label>
+                        <input matInput [type]="hide() ? 'password' : 'text'" [(ngModel)]="password" />
+                        <button mat-icon-button matSuffix (click)="clickEvent($event)"
+                            [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide()">
+                        </button>
+                    </mat-form-field>
+                    <br>
+                    <button class="login-button app-custom-css-004" (click)="login()">
+                        <span>Login</span>
+                    </button>
+                    <div style="color: red;">
+                        <br>
+                        {{ this.loginError }}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,163 @@
+.services-custom-css-002 {
+    padding: 5% 5% 0% 5% !important;
+}
+
+.services-custom-css-003 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.services-custom-css-004 {
+    width: 100%;
+    margin-top: -10%;
+}
+
+.services-custom-css-006 {
+    position: relative;
+    width: 100%;
+}
+
+.services-custom-css-007 {
+    position: absolute;
+    bottom: 0;
+    background: #003CA6;
+    width: 100%;
+    transition: .5s ease;
+    opacity: 1;
+    text-align: center;
+}
+
+.services-custom-css-006:hover .services-custom-css-007 {
+    opacity: 1;
+}
+
+.services-custom-css-008 {
+    background-color: #003CA6;
+    padding: 5%;
+}
+
+.services-custom-css-009 {
+    color: #fff !important;
+    text-align: center !important;
+    padding: 1% !important;
+}
+
+.services-custom-css-010 {
+    border: solid #003CA6;
+    width: 100%;
+    height: auto;
+    display: block;
+    padding: 5% 5% 25% 5%;
+    background-color: white;
+}
+
+@keyframes blink {
+
+    0%,
+    100% {
+        opacity: 1;
+        /* ข้อความแสดงเต็มที่ */
+    }
+
+    50% {
+        opacity: 0;
+        /* ข้อความหายไป */
+    }
+}
+
+// XS
+@media (max-width: 575px) {
+    .services-custom-css-004 {
+        margin-top: 10%;
+    }
+
+    .services-custom-css-009 {
+        padding: 4% 1% !important;
+    }
+}
+
+// SM
+@media (min-width: 576px) {
+    .services-custom-css-004 {
+        margin-top: 10%;
+    }
+
+    .services-custom-css-009 {
+        padding: 4% 1% !important;
+    }
+}
+
+// MD
+@media (min-width: 768px) {
+    .services-custom-css-002 {
+        padding: 3% 3% 0% 0% !important;
+    }
+
+    .services-custom-css-003 {
+        padding-left: 3% !important;
+    }
+
+    .services-custom-css-004 {
+        margin-top: -10%;
+    }
+
+    .services-custom-css-009 {
+        padding: 1% !important;
+    }    
+
+    .services-custom-css-007 {
+        opacity: 0;
+    }
+
+    .services-custom-css-010 {
+        padding: 5% !important;
+    }
+}
+
+// LG
+@media (min-width: 992px) {
+    .services-custom-css-002 {
+        padding: 3% 3% 0% 0% !important;
+    }
+
+    .services-custom-css-003 {
+        padding-left: 3% !important;
+    }
+
+    .services-custom-css-004 {
+        margin-top: -25%;
+    }
+}
+
+// XL
+@media (min-width: 1200px) {
+    .services-custom-css-002 {
+        padding: 3% 3% 0% 0% !important;
+    }
+
+    .services-custom-css-003 {
+        padding-left: 3% !important;
+    }
+}
+
+// XXl
+@media (min-width: 1400px) {
+
+    h2,
+    .h2 {
+        font-size: 2rem !important;
+    }
+
+    h3,
+    .h3 {
+        font-size: calc(1rem + .2vw) !important;
+    }
+
+    .services-custom-css-002 {
+        padding: 3% 3% 0% 0% !important;
+    }
+
+    .services-custom-css-003 {
+        padding-left: 3% !important;
+    }
+}

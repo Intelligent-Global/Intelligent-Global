@@ -1,0 +1,375 @@
+header.masthead {
+    background-repeat: repeat;
+    animation: changeBackground 15s infinite;
+}
+
+@keyframes changeBackground {
+    0% {
+        background-image: url('../../../public/assets/images/home-001.jpg');
+    }
+
+    33% {
+        background-image: url('../../../public/assets/images/home-007.jpg');
+    }
+
+    66% {
+        background-image: url('../../../public/assets/images/home-008.jpg');
+    }
+
+    100% {
+        background-image: url('../../../public/assets/images/home-001.jpg');
+    }
+}
+
+// Default
+.home-custom-css-001 {
+    font-size: 2em;
+}
+
+.home-custom-css-002 {
+    padding: 5% 8% 0% 8% !important;
+}
+
+.home-custom-css-003 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.home-custom-css-004 {
+    display: block !important;
+}
+
+.home-custom-css-005 {
+    padding: 5%;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.home-custom-css-006 {
+    margin-top: 5%;
+    font-size: 1.2rem;
+    overflow-wrap: anywhere;
+}
+
+.home-custom-css-007 {
+    color: #fff;
+    padding: 5% 5%;
+}
+
+.home-custom-css-008 {
+    color: #ffc800 !important;
+    font-size: 75%;
+}
+
+.home-custom-css-009 {
+    margin-bottom: 1rem !important;
+}
+
+.home-custom-css-010 {
+    width: 100%;
+}
+
+.home-custom-css-011 {
+    background-image: url('../../../public/assets/images/home-009.jpg');
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding: 3% 5%;
+}
+
+.home-custom-css-012 {
+    background-color: #003CA6;
+    padding: 5%;
+}
+
+.home-custom-css-014 {
+    position: absolute;
+    bottom: 0;
+    background: #003CA6;
+    width: 100%;
+    transition: .5s ease;
+    opacity: 1;
+    text-align: center;
+}
+
+.home-custom-css-013:hover .home-custom-css-014 {
+    opacity: 1;
+}
+
+.home-custom-css-016 {
+    color: #fff !important;
+    text-align: center !important;
+    padding: 1% !important;
+}
+
+.home-custom-css-017 {
+    border: solid #003CA6;
+    width: 100%;
+    height: auto;
+    display: block;
+    padding: 5% 5% 25% 5%;
+    background-color: white;
+}
+
+// XS
+@media (max-width: 575px) {
+    .home-custom-css-004 {
+        display: none !important;
+    }
+
+    .home-custom-css-005 {
+        font-size: 1.5rem;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+
+    .home-custom-css-006 {
+        font-size: 0.8rem;
+    }
+
+    .home-custom-css-007 {
+        color: #fff;
+        padding: 2%;
+    }
+
+    .home-custom-css-016 {
+        padding: 4% 1% !important;
+    }
+}
+
+// SM
+@media (min-width: 576px) {
+    .home-custom-css-004 {
+        display: none !important;
+    }
+
+    .home-custom-css-005 {
+        font-size: 1.5rem;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+
+    .home-custom-css-006 {
+        font-size: 1rem;
+    }
+
+    .home-custom-css-007 {
+        color: #fff;
+        padding: 2%;
+    }
+
+    .home-custom-css-016 {
+        padding: 4% 1% !important;
+    }
+}
+
+// MD
+@media (min-width: 768px) {
+    .home-custom-css-001 {
+        font-size: 3em;
+    }
+
+    .home-custom-css-002 {
+        padding: 3% 3% 0% 0% !important;
+    }
+
+    .home-custom-css-003 {
+        padding-left: 3% !important;
+    }
+
+    .home-custom-css-005 {
+        font-size: 1.5rem;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+
+    .home-custom-css-006 {
+        font-size: 1rem;
+    }
+
+    .home-custom-css-007 {
+        color: #fff;
+        padding: 3% 5%;
+    }
+
+    .home-custom-css-008 {
+        color: #ffc800 !important;
+        font-size: 100%;
+    }
+
+    .home-custom-css-011 {
+        padding: 0% 5%;
+    }
+
+    .home-custom-css-014 {
+        opacity: 0;
+    }
+
+    .home-custom-css-016 {
+        padding: 1% !important;
+    }
+
+    .home-custom-css-017 {
+        padding: 5% !important;
+    }
+}
+
+// LG
+@media (min-width: 992px) {
+    .home-custom-css-001 {
+        font-size: 4em;
+    }
+
+    .home-custom-css-002 {
+        padding: 3% 3% 0% 0% !important;
+    }
+
+    .home-custom-css-003 {
+        padding-left: 3% !important;
+    }
+
+    .home-custom-css-004 {
+        display: block !important;
+    }
+
+    .home-custom-css-005 {
+        font-size: 1.5rem;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+
+    .home-custom-css-006 {
+        font-size: 1.2rem;
+    }
+
+    .home-custom-css-007 {
+        color: #fff;
+        padding: 3% 5%;
+    }
+}
+
+// XL
+@media (min-width: 1200px) {
+    .home-custom-css-001 {
+        font-size: 5em;
+    }
+
+    .home-custom-css-002 {
+        padding: 3% 3% 0% 0% !important;
+    }
+
+    .home-custom-css-003 {
+        padding-left: 3% !important;
+    }
+
+    .home-custom-css-004 {
+        display: block !important;
+    }
+
+    .home-custom-css-005 {
+        font-size: 1.5rem;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+
+    .home-custom-css-007 {
+        color: #fff;
+        padding: 3% 5%;
+    }
+
+}
+
+// XXl
+@media (min-width: 1400px) {
+
+    h2,
+    .h2 {
+        font-size: 2rem !important;
+    }
+
+    h3,
+    .h3 {
+        font-size: calc(1rem + .2vw) !important;
+    }
+
+    .home-custom-css-001 {
+        font-size: 6em;
+    }
+
+    .home-custom-css-002 {
+        padding: 3% 3% 0% 0% !important;
+    }
+
+    .home-custom-css-003 {
+        padding-left: 3% !important;
+    }
+
+    .home-custom-css-004 {
+        display: block !important;
+    }
+
+    .home-custom-css-005 {
+        font-size: 1.5rem;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+
+    .home-custom-css-007 {
+        color: #fff;
+        padding: 3% 5%;
+    }
+
+}
+
+.home-custom-css-013 {
+    position: relative;
+    width: 100%;
+}
+
+.image-container img:hover {
+    animation: blink 1.5s;
+}
+
+.home-custom-css-015:hover {
+    animation: blink 1s;
+}
+
+@keyframes blink {
+
+    0%,
+    100% {
+        opacity: 1;
+        /* ข้อความแสดงเต็มที่ */
+    }
+
+    50% {
+        opacity: 0;
+        /* ข้อความหายไป */
+    }
+}
+
+
+.hover {
+    border: 5px solid;
+    border-image: repeating-linear-gradient(135deg, #F8CA00 0 10px) 8;
+    -webkit-mask:
+        conic-gradient(from 180deg at top 8px right 8px, #0000 90deg, #000 0) var(--_i, 200%) 0 /200% var(--_i, 8px) border-box no-repeat,
+        conic-gradient(at bottom 8px left 8px, #0000 90deg, #000 0) 0 var(--_i, 200%)/var(--_i, 8px) 200% border-box no-repeat,
+        linear-gradient(#000 0 0) padding-box no-repeat;
+    transition: .3s, -webkit-mask-position .3s .3s;
+}
+
+.hover:hover {
+    --_i: 100%;
+    color: #F8CA00;
+    transition: .3s, -webkit-mask-size .3s .3s;
+}

@@ -1,0 +1,31 @@
+{
+  "contents": {
+    "content001": "ติดต่อเรา",
+    "content002": "บริษัท อินเทลลิเจนท์ โกลบอล จำกัด",
+    "content003": "https://maps.app.goo.gl/8FrUNUTfugfTB1C86"
+  },
+  "images": {
+    "image001": "assets/images/contact-us-001.jpg",
+    "image002": "assets/images/contact-us-002.gif",
+    "image003": "assets/images/contact-us-003.png"
+  },
+  "arrays": {
+    "array001": [
+      {
+        "name": "ที่อยู่",
+        "description": "<p>บริษัท อินเทลลิเจนท์ โกลบอล จำกัด<br>134/466 หมู่บ้านพลัสซิตี้ปาร์คสนามบินน้ำ ตำบลท่าทราย อำเภอเมืองนนทบุรี จังหวัดนนทบุรี 11000</p>",
+        "class": "fas fa-solid fa-house fa-stack-1x fa-inverse"
+      },
+      {
+        "name": "ติดต่อ",
+        "description": "<p>เบอร์โทรศัพท์: 065-359-3544, 096-954-9669<br>Email: Intelglobal789@gmail.com<br>LINE ID: @511ssiqs</p>",
+        "class": "fas fa-solid fa-phone fa-stack-1x fa-inverse"
+      },
+      {
+        "name": "เวลาทำการ",
+        "description": "<p>เวลาทำการ วันจันทร์ ถึง วันศุกร์<br>เวลา 9.00 น. ถึง 18.00 น.</p>",
+        "class": "fas fa-solid fa-door-open fa-stack-1x fa-inverse"
+      }
+    ]
+  }
+}

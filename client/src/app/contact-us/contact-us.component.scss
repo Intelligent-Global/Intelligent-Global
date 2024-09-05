@@ -1,0 +1,181 @@
+.contact-us-custom-css-001 {
+    font-size: 2em;
+}
+
+.contact-us-custom-css-002 {
+    display: block !important;
+}
+
+.contact-us-custom-css-003 {
+    margin-top: 5%;
+    font-size: 1.5rem;
+    overflow-wrap: anywhere;
+    color: #003CA6;
+}
+
+.contact-us-custom-css-004 {
+    color: #003CA6;
+    padding: 4% 3%;
+}
+
+.contact-us-custom-css-005 {
+    width: 100%;
+    margin-top: -10%;
+}
+
+.contact-us-custom-css-006 {
+    // background-image: url('../../../public/assets/images/contact-us-004.jpg');
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding: 0% 5%;
+}
+
+@keyframes blink {
+
+    0%,
+    100% {
+        opacity: 1;
+        /* ข้อความแสดงเต็มที่ */
+    }
+
+    50% {
+        opacity: 0;
+        /* ข้อความหายไป */
+    }
+}
+
+.hover {
+    border: 5px solid;
+    border-image: repeating-linear-gradient(135deg, #003CA6 0 10px) 8;
+    -webkit-mask:
+        conic-gradient(from 180deg at top 8px right 8px, #0000 90deg, #000 0) var(--_i, 200%) 0 /200% var(--_i, 8px) border-box no-repeat,
+        conic-gradient(at bottom 8px left 8px, #0000 90deg, #000 0) 0 var(--_i, 200%)/var(--_i, 8px) 200% border-box no-repeat,
+        linear-gradient(#000 0 0) padding-box no-repeat;
+    transition: .3s, -webkit-mask-position .3s .3s;
+}
+
+.hover:hover {
+    --_i: 100%;
+    color: #003CA6;
+    transition: .3s, -webkit-mask-size .3s .3s;
+}
+
+// XS
+@media (max-width: 575px) {
+    .contact-us-custom-css-002 {
+        display: none !important;
+    }
+
+    .contact-us-custom-css-003 {
+        font-size: 0.8rem;
+    }
+
+    .contact-us-custom-css-005 {
+        margin-top: 10%;
+    }
+}
+
+// SM
+@media (min-width: 576px) {
+    .contact-us-custom-css-002 {
+        display: none !important;
+    }
+    
+    .contact-us-custom-css-003 {
+        font-size: 1rem;
+    }
+
+    .contact-us-custom-css-005 {
+        margin-top: 10%;
+    }
+}
+
+// MD
+@media (min-width: 768px) {
+    .contact-us-custom-css-001 {
+        font-size: 3em;
+    }
+
+    .contact-us-custom-css-003 {
+        font-size: 1.2rem;
+    }
+
+    .contact-us-custom-css-004 {
+        color: #fff;
+        padding: 4% 3%;
+    } 
+
+    .contact-us-custom-css-005 {
+        margin-top: -10%;
+    }
+}
+
+// LG
+@media (min-width: 992px) {
+    .contact-us-custom-css-001 {
+        font-size: 3em;
+    }
+
+    .contact-us-custom-css-002 {
+        display: block !important;
+    }
+
+    .contact-us-custom-css-003 {
+        font-size: 1.75rem;
+    }
+
+    .contact-us-custom-css-004 {
+        color: #fff;
+        padding: 4% 3%;
+    }
+
+    .contact-us-custom-css-005 {
+        margin-top: -25%;
+    }
+}
+
+// XL
+@media (min-width: 1200px) {
+    .contact-us-custom-css-001 {
+        font-size: 3em;
+    }
+
+    .contact-us-custom-css-002 {
+        display: block !important;
+    }
+
+    .contact-us-custom-css-004 {
+        color: #fff;
+        padding: 2% 3%;
+    }
+}
+
+// XXl
+@media (min-width: 1400px) {
+    h2,
+    .h2 {
+        font-size: 2rem !important;
+    }
+
+    h3,
+    .h3 {
+        font-size: calc(1rem + .2vw) !important;
+    }
+
+    .contact-us-custom-css-001 {
+        font-size: 3em;
+    }
+
+    .contact-us-custom-css-002 {
+        display: block !important;
+    }
+
+    .contact-us-custom-css-004 {
+        color: #fff;
+        padding: 2% 3%;
+    }
+}
