@@ -1,8 +1,8 @@
 [
   {
     "id": 1,
-    "username": "admin01",
-    "password": "admin01",
+    "username": "admin",
+    "password": "admin1234",
     "name": "ทัศนาวลัย กลิ่นเทียนฟุ้ง",
     "description": "CEO",
     "image": "assets/images/home-002.jpg"

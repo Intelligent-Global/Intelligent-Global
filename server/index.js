@@ -176,7 +176,7 @@ app.post('/api/home', (req, res) => {
     }
 
     const GITHUB_TOKEN = process.env.GITHUB_TOKEN; // Replace with your GitHub token
-    const REPO_OWNER = 'Supattalak-Phoha';
+    const REPO_OWNER = 'Intelligent-Global';
     const REPO_NAME = 'Intelligent-Global'; // Your repository name
     const FILE_PATH = dataFilePath + '/home.json'; // Local file path you want to upload
     const COMMIT_MESSAGE = 'Update Home Data';
@@ -241,7 +241,7 @@ app.post('/api/about-us', (req, res) => {
     }
 
     const GITHUB_TOKEN = process.env.GITHUB_TOKEN; // Replace with your GitHub token
-    const REPO_OWNER = 'Supattalak-Phoha';
+    const REPO_OWNER = 'Intelligent-Global';
     const REPO_NAME = 'Intelligent-Global'; // Your repository name
     const FILE_PATH = dataFilePath + '/about-us.json'; // Local file path you want to upload
     const COMMIT_MESSAGE = 'Update About Us Data';
@@ -306,7 +306,7 @@ app.post('/api/services', (req, res) => {
     }
 
     const GITHUB_TOKEN = process.env.GITHUB_TOKEN; // Replace with your GitHub token
-    const REPO_OWNER = 'Supattalak-Phoha';
+    const REPO_OWNER = 'Intelligent-Global';
     const REPO_NAME = 'Intelligent-Global'; // Your repository name
     const FILE_PATH = dataFilePath + '/services.json'; // Local file path you want to upload
     const COMMIT_MESSAGE = 'Update Service Data';
@@ -371,7 +371,7 @@ app.post('/api/contact-us', (req, res) => {
     }
 
     const GITHUB_TOKEN = process.env.GITHUB_TOKEN; // Replace with your GitHub token
-    const REPO_OWNER = 'Supattalak-Phoha';
+    const REPO_OWNER = 'Intelligent-Global';
     const REPO_NAME = 'Intelligent-Global'; // Your repository name
     const FILE_PATH = dataFilePath + '/contact-us.json'; // Local file path you want to upload
     const COMMIT_MESSAGE = 'Update Contact Us Data';
@@ -436,7 +436,7 @@ app.post('/api/app', (req, res) => {
     }
 
     const GITHUB_TOKEN = process.env.GITHUB_TOKEN; // Replace with your GitHub token
-    const REPO_OWNER = 'Supattalak-Phoha';
+    const REPO_OWNER = 'Intelligent-Global';
     const REPO_NAME = 'Intelligent-Global'; // Your repository name
     const FILE_PATH = dataFilePath + '/app.json'; // Local file path you want to upload
     const COMMIT_MESSAGE = 'Update App Data';
@@ -501,7 +501,7 @@ app.post('/api/users', (req, res) => {
     }
 
     const GITHUB_TOKEN = process.env.GITHUB_TOKEN; // Replace with your GitHub token
-    const REPO_OWNER = 'Supattalak-Phoha';
+    const REPO_OWNER = 'Intelligent-Global';
     const REPO_NAME = 'Intelligent-Global'; // Your repository name
     const FILE_PATH = dataFilePath + '/users.json'; // Local file path you want to upload
     const COMMIT_MESSAGE = 'Update Users Data';
@@ -589,7 +589,7 @@ app.post('/api/uploadImage', upload.single('file'), (req, res) => {
   console.log('Size:', req.file.size);
 
   const GITHUB_TOKEN = process.env.GITHUB_TOKEN; // Replace with your GitHub token
-  const REPO_OWNER = 'Supattalak-Phoha';
+  const REPO_OWNER = 'Intelligent-Global';
   const REPO_NAME = 'Intelligent-Global'; // Your repository name
   const FILE_PATH = '../client/public/assets/images/'; // Local file path you want to upload
   const COMMIT_MESSAGE = 'Update File';
@@ -648,7 +648,7 @@ app.post('/api/uploadImage', upload.single('file'), (req, res) => {
 
 app.delete('/api/deleteImage/:filename', async (req, res) => {
   const GITHUB_TOKEN = process.env.GITHUB_TOKEN; // Replace with your GitHub token
-  const REPO_OWNER = 'Supattalak-Phoha';
+  const REPO_OWNER = 'Intelligent-Global';
   const REPO_NAME = 'Intelligent-Global'; // Your repository name
   const TARGET_PATH = 'client/public/assets/images'; // Directory in the repository
   const filename = req.params.filename;
